@@ -8,7 +8,8 @@ import Client from "./components/Client";
 
 import { io, Socket } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+// const socket = io("http://localhost:5000");
+const socket = io("https://chat-backend-drt2.onrender.com");
 
 function App() {
   const [username, setUsername] = useState("");
