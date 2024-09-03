@@ -47,7 +47,7 @@ const Client = ({
         <></>
       ) : (
         <>
-          <div>
+          <div className="roam">
             <input
               type="text"
               placeholder="room id"
