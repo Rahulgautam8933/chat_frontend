@@ -47,19 +47,23 @@ const Client = ({
         <></>
       ) : (
         <>
-          <div className="roam">
-            <input
-              type="text"
+            <div className="roam"> Enter Your Room ID:-<br></br> <br />
+            <input type="text"
               placeholder="Room Id"
               value={room}
               onChange={(e) => setRoom(e.target.value)}
             />
+            </div> <br />
+
+            <div className="user1">
             <input
               type="text"
               placeholder="User-Name"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+
             />
+            <br></br>
             <button onClick={joinroom} className="dj">Join</button>
           </div>
         </>
@@ -76,16 +80,17 @@ const Client = ({
               </>
             );
           })}
-       
-      
+       </div>
+      <div className="sms">
         <input
           type="text"
           placeholder="HELLO.."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-
-        <button onClick={send}>send</button>
+        </div>
+<div className="pcx">
+        <button onClick={send} className="buter">Send</button> 
       </div>
     </>
   );

@@ -58,6 +58,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
     background-color: white;
     border-radius: 10px;
     bottom: 10px;
+    
 }
 
 .dj:hover{
@@ -65,7 +66,29 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
     color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
+.user1{
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.buter{
+    border: none;
+    padding: ;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color: rgb(57, 46, 46);
+    border-radius: 1px;
+    bottom: 10px; 
+    
+}
+.buter:hover{
+background-color: rgba(0, 0, 255,0.5);
+color:white;
+  box-shadow: rgba(243, 241, 241, 0.2) 0px 60px 40px -7px;
 
-
-
+}
+/*dbwibdiwbibifbibikb
 
