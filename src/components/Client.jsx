@@ -50,24 +50,25 @@ const Client = ({
           <div className="roam">
             <input
               type="text"
-              placeholder="room id"
+              placeholder="Room Id"
               value={room}
               onChange={(e) => setRoom(e.target.value)}
             />
             <input
               type="text"
-              placeholder="username"
+              placeholder="User-Name"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <button onClick={joinroom}>join</button>
+            <button onClick={joinroom} className="dj">Join</button>
           </div>
         </>
       )}
-
-      <div>
-        <div>
-          messages:{" "}
+<br />
+   
+<div className="mesg">
+          Messages:{" "}
+          <br /><br />
           {messageList?.map((item, index) => {
             return (
               <>
@@ -75,11 +76,11 @@ const Client = ({
               </>
             );
           })}
-        </div>
-
+       
+      
         <input
           type="text"
-          placeholder="hi..."
+          placeholder="HELLO.."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
