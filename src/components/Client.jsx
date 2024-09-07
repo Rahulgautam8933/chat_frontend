@@ -71,7 +71,7 @@ const Client = ({
 <br />
    
 <div className="mesg">
-          Messages:{" "}
+          Write Your Messages Here:{" "}
           <br /><br />
           {messageList?.map((item, index) => {
             return (
@@ -83,14 +83,21 @@ const Client = ({
        </div>
       <div className="sms">
         <input
-          type="text"
-          placeholder="HELLO.."
+          type= "text"
+          placeholder="Type Your Messege Here"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         </div>
-<div className="pcx">
-        <button onClick={send} className="buter">Send</button> 
+        
+<div className="buter">
+        <button onClick={send}className="psd">Send</button> 
+     
+      </div>
+      <div className="feed">
+
+    
+      
       </div>
     </>
   );
