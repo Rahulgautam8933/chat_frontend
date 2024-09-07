@@ -47,27 +47,32 @@ const Client = ({
         <></>
       ) : (
         <>
-          <div>
-            <input
-              type="text"
-              placeholder="room id"
+            <div className="roam"> Enter Your Room ID:-<br></br> <br />
+            <input type="text"
+              placeholder="Room Id"
               value={room}
               onChange={(e) => setRoom(e.target.value)}
             />
+            </div> <br />
+
+            <div className="user1">
             <input
               type="text"
-              placeholder="username"
+              placeholder="User-Name"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+
             />
-            <button onClick={joinroom}>join</button>
+            <br></br>
+            <button onClick={joinroom} className="dj">Join</button>
           </div>
         </>
       )}
-
-      <div>
-        <div>
-          messages:{" "}
+<br />
+   
+<div className="mesg">
+          Write Your Messages Here:{" "}
+          <br /><br />
           {messageList?.map((item, index) => {
             return (
               <>
@@ -75,16 +80,24 @@ const Client = ({
               </>
             );
           })}
-        </div>
-
+       </div>
+      <div className="sms">
         <input
-          type="text"
-          placeholder="hi..."
+          type= "text"
+          placeholder="Type Your Messege Here"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
+        </div>
+        
+<div className="buter">
+        <button onClick={send}className="psd">Send</button> 
+     
+      </div>
+      <div className="feed">
 
-        <button onClick={send}>send</button>
+    
+      
       </div>
     </>
   );

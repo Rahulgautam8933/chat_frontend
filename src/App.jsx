@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Admin from "./components/Admin";
+import "./app.css"
 
 import Home from "./components/Home";
 import Client from "./components/Client";
@@ -44,7 +45,7 @@ function App() {
             }
           />
           <Route
-            path="/chat"
+            path="/chat" 
             element={
               <Client
                 socket={socket}
