@@ -10,11 +10,11 @@ const App = () => {
     <Router>
       <div className="app">
         <Routes>
-        <Route
+          <Route
             path="/"
             element={<ProtectedRoute element={<ChatWindow />} />}
           />
-          
+
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
